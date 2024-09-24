@@ -1,0 +1,686 @@
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*root*/
+
+:root{
+  --color--white:#FEFEFE;
+  --color--blue:#4F9CAE;
+  --color--text_blue:#14414C;
+}
+
+:root{
+	scroll-padding: 140px;
+}s
+
+body, html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Poppins" "M PLUS Rounded 1c";
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #FEFEFE;
+}
+
+/*header*/
+
+header{
+  width: 100%;
+  background-color: var(--color--blue);
+  padding: 2.0rem;
+  position: fixed;
+  z-index: 30;
+}
+
+.header_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  margin: 0 8vw;
+}
+
+.header_logo{
+  display: inline;
+  font-size: 4.8rem;
+}
+.header_logo a{
+  color: var(--color--white);
+  text-decoration: none;
+}
+
+.header_logo a:hover{
+  color: var(--color--text_blue);
+}
+
+.header_nav ul{
+  display: flex;
+}
+
+.header_nav_item{
+  font-size: 3.2rem;
+  color: var(--color--white);
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.header_nav_item:first-child{
+  margin-right: 6.4rem;
+}
+
+.header_nav_item:hover{
+  background-color: var(--color--text_blue);
+}
+
+.header_nav_item li{
+  list-style: none;
+}
+
+/*main*/
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*mv*/
+
+.mv{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-top: 18.0rem;
+  margin: 0 10vw;
+}
+
+.first_view{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.first_view img{
+  width: 54%;
+  object-fit: contain;
+}
+
+.fv_title{
+  width: 45%;
+  display: block;
+  padding: 3.2rem;
+  border: solid 3px var(--color--text_blue);
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: var(--color--text_blue);
+  box-shadow: 2.0rem 2.0rem var(--color--text_blue);
+}
+
+.fv_title_name{
+  font-size: 8.4rem;
+  line-height: 140%;
+}
+
+.fv_title_site{
+  font-size: 6.4rem;
+  line-height: 140%;
+}
+
+.scroll{
+  display: flex;
+  align-items: start;
+  position: relative;
+  bottom: 2.4rem;
+}
+
+.scroll p{
+  font-family: "Poppins";
+  font-weight: 700;
+  color: var(--color--blue);
+  font-size: 3.2rem;
+  line-height: 170%;
+  margin-right: 1.6rem;
+}
+
+.scroll img{
+  height: 13vh;
+  position: relative;
+  top: 1.2rem;
+}
+
+/*section*/
+
+.contents{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 9.6rem;
+  margin: 16.0rem 10vw 0;
+}
+
+.section_title{
+  display:inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section_title_en{
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 120%;
+  color:var(--color--text_blue);
+}
+
+.section_title_jp{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 170%;
+  color: var(--color--blue);
+}
+
+/*works*/
+
+.works_contents{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8.0rem;
+}
+
+.works_tag{
+  display: inline;
+  background-color: var(--color--blue);
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  color: var(--color--white);
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 170%;
+}
+
+.works_box_wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.works_box{
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.works_box:hover{
+  background: var(--color--white);
+  opacity: 1;
+}
+
+.works_box a{
+  width: 100%;
+  height: 60%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.works_box img{
+  width: 100%;
+  height: 100%;
+  border: solid 3px var(--color--text_blue);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.img_viewmore{
+   border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    background: rgba(0,0,0,0);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--color--white);
+    transition: .3s;
+}
+
+.img_viewmore:hover{
+  background: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+.works_box_text{
+  width: 100%;
+  font-family: "M PLUS Rounded 1c";
+  color: var(--color--text_blue);
+}
+
+.works_box_title{
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 1.6rem;
+}
+
+
+.works_box_role{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/*about*/
+
+.about_contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_img{
+  width: 35%;
+  object-fit: contain;
+  border: solid 3px var(--color--text_blue);
+  border-radius: 10px;
+}
+
+.about_text_wrapper{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_text{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 2.4rem;
+  margin-bottom: 4.0rem;
+}
+
+.profile_name{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_name p{
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: var(--color--blue);
+}
+
+.profile_name h4{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 140%;
+  color: var(--color--text_blue);
+}
+
+.about_text_note{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 170%;
+  color: var(--color--text_blue);
+}
+
+/*button*/
+
+.blue_button{
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+}
+
+.blue_button a{
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 170%;
+  text-align: center;
+  background-color: var(--color--white);
+  color: var(--color--text_blue);
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+}
+
+.blue_button a:hover{
+  color: var(--color--white);
+  background-color: var(--color--text_blue);
+}
+
+/*footer*/
+
+footer{
+  width: 100%;
+  background-color: var(--color--text_blue);
+  padding: 3.2rem 0;
+  margin-top: 24.0rem;
+}
+
+.footer_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 16vw;
+}
+
+.footer_contact{
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.contact_title{
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 4.0rem;
+  line-height: 170%;
+  color: var(--color--white);
+}
+
+.contact_title_jp{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 170%;
+  color: var(--color--white);
+}
+
+.contact-mail{
+  margin-bottom: 4.0rem;
+}
+
+.contact-mail p{
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 170%;
+  color: var(--color--text_blue);
+  background-color: var(--color--white);
+  padding: 0.4rem 6.4rem;
+  border-radius: 10px;
+}
+
+footer small{
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 170%;
+  color: var(--color--white);
+}
+
+/*responsive*/
+
+/*--min-width:1680px;--*/
+
+@media screen and (min-width: 1680px){
+  html{
+    font-size: calc(40% + 0.3vw);
+  }
+}
+
+/*--max-width:1279px;--*/
+
+@media screen and (max-width: 1279px){
+  html{
+    font-size: 52%;
+  }
+
+  .fv_title_name{
+    font-size: 7.2rem;
+  }
+
+  .fv_title_site{
+    font-size: 5.2rem;
+  }
+
+  .header_nav_item{
+    font-size: 2.8rem
+  }
+}
+
+@media screen and (max-width: 899px){
+
+  .fv_title_name{
+    font-size: 6.4rem;
+  }
+
+  .fv_title_site{
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  html{
+    font-size: 62.5%;
+  }
+ /*header*/
+
+  .header_inner{
+    margin: 0 2vw;
+  }
+
+  .header_logo{
+    font-size: 2.8rem;
+  }
+
+  .header_nav_item{
+    padding: 0.8rem;
+    font-size: 1.6rem;
+  }
+
+  .header_nav_item:first-child{
+    margin-right: 2.4rem;
+  }
+
+  /*main*/
+
+  /*mv*/
+  .mv{
+
+    padding-top: 16.0rem;
+  }
+
+  .first_view{
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2.4rem;
+  }
+
+  .fv_title{
+    width: 80%;
+    padding: 1.6rem;
+    box-shadow: 1.2rem 1.2rem;
+  }
+
+  .fv_title_name{
+    font-size: 4.8rem;
+  }
+
+  .fv_title_site{
+    font-size: 3.2rem;
+  }
+
+  .first_view img{
+    width: 80%;
+    margin-left: 12.0rem;
+  }
+
+  .scroll{
+    bottom: 3.2rem;
+  }
+
+  .scroll p{
+    font-size: 2.0rem;
+    margin-right: 1.0rem;
+  }
+
+  .scroll img{
+    height: 7.2rem;
+  }
+
+  /*works*/
+
+  .contents{
+    row-gap: 6.4rem;
+    margin: 8.0rem 10vw 0;
+  }
+
+  .section_title_en{
+    font-size: 4.0rem;
+  }
+
+  .section_title_jp{
+    font-size: 1.6rem;
+  }
+
+  .works_tag{
+    font-size: 2.0rem;
+  }
+
+  .works_box_wrapper{
+    flex-direction: column;
+    row-gap: 4.8rem;
+  }
+
+  .works_box{
+    width: 100%;
+    row-gap: 1.2rem;
+    margin-top: 3.2rem;
+  }
+
+  .works_box_title{
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .works_box_role{
+    font-size: 1.4rem;
+  }
+
+  /*about*/
+  .about_contents{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.6rem;
+  }
+
+  .about_img{
+    width: 80%;
+  }
+
+  .about_text_wrapper{
+  width: 100%;
+  }
+
+  .about_text{
+    row-gap: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .profile_name p{
+    font-size: 1.4rem;
+  }
+
+  .profile_name h4{
+    font-size: 2.4rem;
+  }
+
+  .about_text_note{
+    font-size: 1.6rem;
+  }
+
+  .blue_button a{
+    font-size: 2.4rem;
+  }
+
+  /*footer*/
+
+  footer{
+    margin-top: 16.0rem;
+  }
+
+  .footer_wrapper{
+    margin: 0 8vw;
+  }
+
+  .footer_contact{
+    margin-bottom: 2.0rem;
+  }
+
+  .contact_title{
+    font-size: 3.2rem;
+  }
+
+  .contact_title_jp{
+    font-size: 1.4rem;
+  }
+
+  .contact-mail p{
+    font-size: 2.0rem;
+  }
+
+  footer small{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+}
+
+@media screen and (max-width: 425px){
+
+  html{
+    font-size: 52%;
+  }
+
+  .mv{
+    padding-top: 12.0rem;
+  }
+
+  .header_nav_item{
+    padding: 0;
+  }
+
+  .first_view img{
+    width: 75%;
+    margin-left: 10.0rem;
+  }
+
+  .contents{
+    margin: 6.4rem 10vw 0;
+  }
+
+  .contact-mail p{
+    padding: 0.4rem 2.4rem;
+  }
+}
